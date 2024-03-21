@@ -1,0 +1,187 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+:root{
+   --1: #fff;
+   --2:#ffffffcc;
+   --3:#000000;
+   --4:#000000cc;
+   --5:#0200006e;
+   --6:#ffdf00;
+   --7:#009c3b;
+}
+video{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 140vh;
+    object-fit: cover;
+    position: absolute;
+    top: 0px;
+}
+
+.secao-banner{
+    font-family: 'Ysabeau Infant', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.secao-tabela{
+    font-family: 'Montserrat', sans-serif;
+    background-image: url('/ASSETS/imagem-de-fundo.jpg');
+    width: 100%;
+    height: 100vh;
+    margin-top: 135px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.secao-tabela h1{
+    margin-top: 50px;
+}
+.secao-tabela thead{
+    background-color: var(--4);
+    color: white;
+}
+table{
+    font-size: 15px;
+    margin-top: 30px;
+}
+thead th{
+    width: 150px;
+    height: 50px;
+    
+
+}
+tbody tr img{
+    width: 30px;
+    
+}
+tbody .imgs{
+    text-align: center;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px
+   
+}
+
+tbody td{
+    text-align: center;
+    font-size: 20px;
+}
+.secao-tabela h1{
+    font-size: 50px;
+    color: white;
+    text-shadow: 4px 4px 0px black;
+
+}
+
+.foto-perfil{
+    background-color: black;
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    background-image: url('/ASSETS/neymar.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 130px;
+
+}
+.foto-perfil::before{
+    content: "";
+    width: 215px;
+    height: 215px;
+    position: absolute;
+    background: linear-gradient(90deg, #ffdf00, #009c3b);
+    border-radius: 100%;
+    z-index: -1;
+}
+.titulo{
+    margin-top: 40px;
+    font-size: 25px;
+    color: var(--1);
+    text-shadow: #000000 3px 5px 3px;
+}
+.titulo h1{
+    position: relative;
+}
+.titulo h1::after{
+    content: "";
+    background-image: url('/ASSETS/verificado.png');
+    width: 20px;
+    height: 20px;
+    background-size: 20px;
+    position: absolute;
+    right: -20px;
+    bottom: 10px;
+}
+.titulo h1::before{
+    content:"";
+    position: absolute;
+    background: linear-gradient(90deg, #ffdf00, #009c3b) ;
+    width: 55px;
+    height: 5px;
+    bottom: 2px;
+    left: 5px;
+    border-radius: 4px;
+}
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    gap: 20px;
+    margin-top: 30px;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+.links a{
+    background-color: rgb(0, 0, 0, 40%);
+    border-radius: 18px;
+    text-align: center;
+    width: 600px;
+    height: 45px;
+    display: flex;
+    left: 0px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: white;
+
+}
+.links a:hover{
+    background-color: white;
+    color: black
+}
+a  img{
+    width: 30px;
+    position: absolute;
+    left: 10px;
+}
+
+tbody tr:nth-of-type(odd){
+    background-color: var(--2);
+}
+tbody tr:nth-of-type(even){
+    background-color: var(--4);
+    color: white;
+}
+tbody tr{
+    height: 60px;
+}
